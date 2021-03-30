@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #1a1a1a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  max-width: 30%;
+}
+
+#gear1 {
+  animation: gear1 10s linear infinite;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes gear1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#gear2 {
+  animation: gear2 7s linear infinite;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes gear2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
